@@ -1,0 +1,15 @@
+-- Create a new table called 'ingredients' in schema recipes'
+-- Drop the table if it already exists
+IF OBJECT_ID('ingredients', 'U') IS NOT NULL
+DROP TABLE ingredients
+GO
+-- Create the table in the specified schema
+CREATE TABLE ingredients
+(
+    id INT NOT NULL, 
+    ingredient_name [NVARCHAR](50) NOT NULL,
+    amount numeric NOT NULL,
+    unit[NVARCHAR](50) NOT NULL,
+    PRIMARY KEY (id,ingredient_name)
+);
+GO

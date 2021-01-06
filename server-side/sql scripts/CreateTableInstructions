@@ -1,0 +1,16 @@
+-- Create a new table called 'instructions' in schema 'recipes'
+-- Drop the table if it already exists
+IF OBJECT_ID('instructions', 'U') IS NOT NULL
+DROP TABLE instructions
+GO
+-- Create the table in the specified schema
+CREATE TABLE instructions
+(
+    id INT NOT NULL, 
+    step INT NOT NULL,
+    step_description [NVARCHAR](300) NOT NULL,
+    equipment [NVARCHAR](300) NOT NULL,
+    ingredients [NVARCHAR](300) NOT NULL, 
+    PRIMARY KEY (id,step)
+);
+GO

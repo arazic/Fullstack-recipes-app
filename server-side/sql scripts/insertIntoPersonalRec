@@ -1,0 +1,22 @@
+-- Insert rows into table 'TableName'
+INSERT INTO previewRecipes
+VALUES
+( -- first row: values for the columns in the list above
+ '61d93519-f302-40b5-9aeb-3697a69a0594', '1', 'Best Chocolate Chip Cookies',
+ '1 hr', 'https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg',
+ '102', '0','1','0', '12'
+),
+( -- second row: values for the columns in the list above
+ '61d93519-f302-40b5-9aeb-3697a69a0594', '2', 'Spaghetti Bolognese',
+ '25 MINS', 'https://www.errenskitchen.com/wp-content/uploads/2015/02/Quick-Easy-Spaghetti-Bolognese2-1.jpg',
+ '123', '0','0','0', '6'
+),
+( -- second row: values for the columns in the list above
+  '61d93519-f302-40b5-9aeb-3697a69a0594', '3', 'Pizza',
+ '1 hr', 'https://www.simplyrecipes.com/wp-content/uploads/2007/01/homemade-pizza-horiz-a-1200-1024x683.jpg',
+ '220', '0','1','0', '4'
+)
+-- add more rows here
+GO
+
+

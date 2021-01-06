@@ -1,0 +1,15 @@
+-- Create a new table called 'UserLastRecipes' in schema 'recipes'
+-- Drop the table if it already exists
+IF OBJECT_ID('recipes.UserLastRecipes', 'U') IS NOT NULL
+DROP TABLE recipes.UserLastRecipes
+GO
+-- Create the table in the specified schema
+CREATE TABLE UserLastRecipes
+(
+    [user_id] [UNIQUEIDENTIFIER] NOT NULL,
+    [recipe_id] [NVARCHAR](50) NOT NULL,
+    [counter][TINYINT] NOT NULL,
+    PRIMARY KEY (user_id,recipe_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+GO
